@@ -11,16 +11,16 @@ namespace EfEx1
         static void Main(string[] args)
         {
 
-            //var result = GetAllCategories();
-            //foreach (var res in result)
-            //{
-            //    Console.WriteLine("result: " + res);
-            //}
-            var p = AddCategory("Testing", "Some description of this category");
-            Console.WriteLine("result: " + p);
+            var result = GetOrderDetailsByProductId(59);
+            foreach (var res in result)
+            {
+                Console.WriteLine("result: " + res);
+            }
+            //var p = GetSingleOrderById(10510);
+            //Console.WriteLine("result: " + p);
         }
         // 1. Get a single order by ID
-        private static object GetSingleOrderById(int id)
+        private static Orders GetSingleOrderById(int id)
         {
             using (var db = new NorthwindContex())
             {
@@ -123,14 +123,17 @@ namespace EfEx1
         }
 
         // 6.Get product by id
-        private static Object GetProductById(int productId)
+        private static Products GetProductById(int productId)
         {
             using (var db = new NorthwindContex())
             {
-                return (from product in db.Products
-                             join category in db.Categories on product.CategoryId equals category.Id
-                             where product.Id == productId
-                             select new { name = product.Name, unitPrice = product.UnitPrice, categoryName = category.CategoryName }).First();
+                Products products =
+                    (from product in db.Products
+                     where product.Id == productId
+                     select product
+                    ).First();
+                return products;
+                // category name needs to be added
             }
         }
 
@@ -144,7 +147,7 @@ namespace EfEx1
                              join category in db.Categories on product.CategoryId equals category.Id
                              where product.Name != null && product.Name.ToLower().Contains(searchValue.ToLower())
                              select new { productName = product.Name, categoryName = category.CategoryName });
-                foreach (var item in query)
+                foreach(var item in query)
                 {
                     responseList.Add(item);
                 }
@@ -153,20 +156,16 @@ namespace EfEx1
         }
 
         // 8. Get products by categoryid
-        private static List<object> GetProductsByCategoryId(int categoryId)
+        private static List<Products> GetProductsByCategoryId(int categoryId)
         {
             using (var db = new NorthwindContex())
             {
-                var responseList = new List<object>();
-                var query = (from product in db.Products
-                             join category in db.Categories on product.CategoryId equals category.Id
-                             where category.Id == categoryId
-                             select new { name = product.Name, unitPrice = product.UnitPrice, categoryName = category.CategoryName });
-                foreach(var item in query)
-                {
-                    responseList.Add(item);
-                }
-                return responseList;
+                List <Products> products =
+                (from product in db.Products
+                 where product.CategoryId == categoryId
+                 select product
+                ).ToList();
+                return products;
             }
         }
 
@@ -175,67 +174,19 @@ namespace EfEx1
         {
             using (var db = new NorthwindContex())
             {
-                if ((from category in db.Categories where category.Id == id select category).Any()) {
-                    Category c = (from category in db.Categories where category.Id == id select category).First();
-                    return c;
-                }
-                return null;
+                Category c = (from category in db.Categories where category.Id == id select category).First();
+                return c;
             }
         }
 
         // 10. Get all categories
-        private static List<object> GetAllCategories()
+        private static List<Category> GetAllCategories()
         {
             using (var db = new NorthwindContex())
             {
-                List<object> categories = new List<object>();
-                var query = (from category
-                                           in db.Categories
-                                           select new {Id = category.Id, Name = category.CategoryName, Description = category.CategoryDescription});
-                foreach(var item in query)
-                {
-                    categories.Add(item);
-                }
+                List<Category> categories = (from category in db.Categories select category).ToList();
                 return categories;
             }
         }
-
-        // 11. Add category
-        private static Category AddCategory(string name, string description)
-        {
-            using (var db = new NorthwindContex())
-            {
-                if (name.Length <= 15) {
-                    int maxId = db.Categories.OrderByDescending(u => u.Id).FirstOrDefault().Id;
-                    Category category = new Category
-                    {
-                        Id = maxId + 1,
-                        CategoryName = name,
-                        CategoryDescription = description
-                    };
-                    db.Categories.Add(category);
-                    db.SaveChanges();
-                    return category;
-                }
-                return null;
-            }
-        }
-
-        // 12. Update category
-        private static Boolean UpdateCategory(int categoryId, string name, string description)
-        {
-            using (var db = new NorthwindContex())
-            {
-                if ((from category in db.Categories where category.Id == categoryId select category).Any())
-                {
-
-                }
-
-            } return false;
-        }
-
-        // 13. Delete category
-
-
     }
 }

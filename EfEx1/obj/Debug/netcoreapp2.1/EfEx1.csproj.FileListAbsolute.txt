@@ -20,3 +20,14 @@
 /Users/filipgermanek/Downloads/Assigment4pt1Nico/EfEx1/obj/Debug/netcoreapp2.1/EfEx1.AssemblyInfo.cs
 /Users/filipgermanek/Downloads/Assigment4pt1Nico/EfEx1/obj/Debug/netcoreapp2.1/EfEx1.dll
 /Users/filipgermanek/Downloads/Assigment4pt1Nico/EfEx1/obj/Debug/netcoreapp2.1/EfEx1.pdb
+/Users/filipgermanek/Desktop/Assignment4/EfEx1/bin/Debug/netcoreapp2.1/EfEx1.deps.json
+/Users/filipgermanek/Desktop/Assignment4/EfEx1/bin/Debug/netcoreapp2.1/EfEx1.runtimeconfig.json
+/Users/filipgermanek/Desktop/Assignment4/EfEx1/bin/Debug/netcoreapp2.1/EfEx1.runtimeconfig.dev.json
+/Users/filipgermanek/Desktop/Assignment4/EfEx1/bin/Debug/netcoreapp2.1/EfEx1.dll
+/Users/filipgermanek/Desktop/Assignment4/EfEx1/bin/Debug/netcoreapp2.1/EfEx1.pdb
+/Users/filipgermanek/Desktop/Assignment4/EfEx1/obj/Debug/netcoreapp2.1/EfEx1.csprojAssemblyReference.cache
+/Users/filipgermanek/Desktop/Assignment4/EfEx1/obj/Debug/netcoreapp2.1/EfEx1.csproj.CoreCompileInputs.cache
+/Users/filipgermanek/Desktop/Assignment4/EfEx1/obj/Debug/netcoreapp2.1/EfEx1.AssemblyInfoInputs.cache
+/Users/filipgermanek/Desktop/Assignment4/EfEx1/obj/Debug/netcoreapp2.1/EfEx1.AssemblyInfo.cs
+/Users/filipgermanek/Desktop/Assignment4/EfEx1/obj/Debug/netcoreapp2.1/EfEx1.dll
+/Users/filipgermanek/Desktop/Assignment4/EfEx1/obj/Debug/netcoreapp2.1/EfEx1.pdb

@@ -3174,17 +3174,17 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/filipgermanek/Desktop/Assigment4pt1Nico/EfEx1/EfEx1.csproj",
+      "projectUniqueName": "/Users/filipgermanek/Desktop/Assignment4/EfEx1/EfEx1.csproj",
       "projectName": "EfEx1",
-      "projectPath": "/Users/filipgermanek/Desktop/Assigment4pt1Nico/EfEx1/EfEx1.csproj",
+      "projectPath": "/Users/filipgermanek/Desktop/Assignment4/EfEx1/EfEx1.csproj",
       "packagesPath": "/Users/filipgermanek/.nuget/packages/",
-      "outputPath": "/Users/filipgermanek/Desktop/Assigment4pt1Nico/EfEx1/obj",
+      "outputPath": "/Users/filipgermanek/Desktop/Assignment4/EfEx1/obj/",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "/Users/filipgermanek/.config/NuGet/NuGet.Config"
+        "/Users/filipgermanek/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.1"
@@ -3208,17 +3208,16 @@
         "dependencies": {
           "Microsoft.Extensions.Logging.Console": {
             "target": "Package",
-            "version": "2.1.1"
+            "version": "[2.1.1, )"
+          },
+          "Microsoft.NETCore.App": {
+            "target": "Package",
+            "version": "[2.1.0, )",
+            "autoReferenced": true
           },
           "Npgsql.EntityFrameworkCore.PostgreSQL": {
             "target": "Package",
-            "version": "2.1.2"
-          },
-          "Microsoft.NETCore.App": {
-            "suppressParent": "All",
-            "target": "Package",
-            "version": "2.1.0",
-            "autoReferenced": true
+            "version": "[2.1.2, )"
           }
         },
         "imports": [
