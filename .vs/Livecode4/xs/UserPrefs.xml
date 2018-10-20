@@ -1,8 +1,9 @@
 ﻿<Properties StartupConfiguration="{181A174B-840A-4F6D-850A-FAA83C80AE98}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="EfEx1/Program.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="trunk Status">
     <Files>
-      <File FileName="EfEx1/Program.cs" Line="182" Column="29" />
-      <File FileName="EfEx1/Category.cs" Line="1" Column="1" />
+      <File FileName="EfEx1/NorthwindContex.cs" Line="1" Column="1" />
+      <File FileName="EfEx1/Program.cs" Line="13" Column="49" />
+      <File FileName="trunk Status" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
