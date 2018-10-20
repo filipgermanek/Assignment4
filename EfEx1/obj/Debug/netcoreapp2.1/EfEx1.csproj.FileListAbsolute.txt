@@ -1,0 +1,22 @@
+/Users/nicolaielhojnielsen/Documents/Visual Studio Projects/Livecode4/EfEx1/bin/Debug/netcoreapp2.1/EfEx1.deps.json
+/Users/nicolaielhojnielsen/Documents/Visual Studio Projects/Livecode4/EfEx1/bin/Debug/netcoreapp2.1/EfEx1.runtimeconfig.json
+/Users/nicolaielhojnielsen/Documents/Visual Studio Projects/Livecode4/EfEx1/bin/Debug/netcoreapp2.1/EfEx1.runtimeconfig.dev.json
+/Users/nicolaielhojnielsen/Documents/Visual Studio Projects/Livecode4/EfEx1/bin/Debug/netcoreapp2.1/EfEx1.dll
+/Users/nicolaielhojnielsen/Documents/Visual Studio Projects/Livecode4/EfEx1/bin/Debug/netcoreapp2.1/EfEx1.pdb
+/Users/nicolaielhojnielsen/Documents/Visual Studio Projects/Livecode4/EfEx1/obj/Debug/netcoreapp2.1/EfEx1.csprojAssemblyReference.cache
+/Users/nicolaielhojnielsen/Documents/Visual Studio Projects/Livecode4/EfEx1/obj/Debug/netcoreapp2.1/EfEx1.csproj.CoreCompileInputs.cache
+/Users/nicolaielhojnielsen/Documents/Visual Studio Projects/Livecode4/EfEx1/obj/Debug/netcoreapp2.1/EfEx1.AssemblyInfoInputs.cache
+/Users/nicolaielhojnielsen/Documents/Visual Studio Projects/Livecode4/EfEx1/obj/Debug/netcoreapp2.1/EfEx1.AssemblyInfo.cs
+/Users/nicolaielhojnielsen/Documents/Visual Studio Projects/Livecode4/EfEx1/obj/Debug/netcoreapp2.1/EfEx1.dll
+/Users/nicolaielhojnielsen/Documents/Visual Studio Projects/Livecode4/EfEx1/obj/Debug/netcoreapp2.1/EfEx1.pdb
+/Users/filipgermanek/Downloads/Assigment4pt1Nico/EfEx1/bin/Debug/netcoreapp2.1/EfEx1.deps.json
+/Users/filipgermanek/Downloads/Assigment4pt1Nico/EfEx1/bin/Debug/netcoreapp2.1/EfEx1.runtimeconfig.json
+/Users/filipgermanek/Downloads/Assigment4pt1Nico/EfEx1/bin/Debug/netcoreapp2.1/EfEx1.runtimeconfig.dev.json
+/Users/filipgermanek/Downloads/Assigment4pt1Nico/EfEx1/bin/Debug/netcoreapp2.1/EfEx1.dll
+/Users/filipgermanek/Downloads/Assigment4pt1Nico/EfEx1/bin/Debug/netcoreapp2.1/EfEx1.pdb
+/Users/filipgermanek/Downloads/Assigment4pt1Nico/EfEx1/obj/Debug/netcoreapp2.1/EfEx1.csprojAssemblyReference.cache
+/Users/filipgermanek/Downloads/Assigment4pt1Nico/EfEx1/obj/Debug/netcoreapp2.1/EfEx1.csproj.CoreCompileInputs.cache
+/Users/filipgermanek/Downloads/Assigment4pt1Nico/EfEx1/obj/Debug/netcoreapp2.1/EfEx1.AssemblyInfoInputs.cache
+/Users/filipgermanek/Downloads/Assigment4pt1Nico/EfEx1/obj/Debug/netcoreapp2.1/EfEx1.AssemblyInfo.cs
+/Users/filipgermanek/Downloads/Assigment4pt1Nico/EfEx1/obj/Debug/netcoreapp2.1/EfEx1.dll
+/Users/filipgermanek/Downloads/Assigment4pt1Nico/EfEx1/obj/Debug/netcoreapp2.1/EfEx1.pdb
