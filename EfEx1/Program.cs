@@ -16,10 +16,10 @@ namespace EfEx1
             //{
             //    Console.WriteLine("result: " + res);
             //}
-            var p = AddCategory("Testing", "Some description of this category");
+            var p = UpdateCategory(9, "name updt", "Desc changed");
             Console.WriteLine("result: " + p);
         }
-        // 1. Get a single order by ID
+        // 1.Get a single order by ID
         private static object GetSingleOrderById(int id)
         {
             using (var db = new NorthwindContex())
@@ -50,7 +50,7 @@ namespace EfEx1
             }
         }
 
-        // 2. Get orders by shipping name
+        // 2.Get orders by shipping name
         private static List<object>  GetOrderByShippingName(string shippingName)
         {
             using (var db = new NorthwindContex())
@@ -68,7 +68,7 @@ namespace EfEx1
             }
         }
 
-        // 3. Get all orders
+        // 3.Get all orders
         private static List<object> GetAllOrders()
         {
             using (var db = new NorthwindContex())
@@ -134,7 +134,7 @@ namespace EfEx1
             }
         }
 
-        // 7. Get a list of products that contain substring
+        // 7.Get a list of products that contain substring
         private static List<object> GetProductsBySubString(string searchValue)
         {
             using (var db = new NorthwindContex())
@@ -152,7 +152,7 @@ namespace EfEx1
             }
         }
 
-        // 8. Get products by categoryid
+        // 8.Get products by categoryid
         private static List<object> GetProductsByCategoryId(int categoryId)
         {
             using (var db = new NorthwindContex())
@@ -170,7 +170,7 @@ namespace EfEx1
             }
         }
 
-        // 9. Get category by id
+        // 9.Get category by id
         private static Category GetCategoryById(int id)
         {
             using (var db = new NorthwindContex())
@@ -183,7 +183,7 @@ namespace EfEx1
             }
         }
 
-        // 10. Get all categories
+        // 10.Get all categories
         private static List<object> GetAllCategories()
         {
             using (var db = new NorthwindContex())
@@ -200,7 +200,7 @@ namespace EfEx1
             }
         }
 
-        // 11. Add category
+        // 11.Add category
         private static Category AddCategory(string name, string description)
         {
             using (var db = new NorthwindContex())
@@ -221,20 +221,39 @@ namespace EfEx1
             }
         }
 
-        // 12. Update category
+        // 12.Update category
         private static Boolean UpdateCategory(int categoryId, string name, string description)
         {
             using (var db = new NorthwindContex())
             {
-                if ((from category in db.Categories where category.Id == categoryId select category).Any())
+                if (name != null && name.Length <= 15 && (from category in db.Categories where category.Id == categoryId select category).Any())
                 {
-
+                    var category = (from c in db.Categories where c.Id == categoryId select c).First();
+                    category.CategoryName = name;
+                    category.CategoryDescription = description;
+                    db.SaveChanges();
+                    return true;
                 }
-
-            } return false;
+                return false;
+            }
         }
 
-        // 13. Delete category
+        // 13.Delete category
+        private static Boolean DeleteCategory(int categoryId)
+        {
+            using (var db = new NorthwindContex())
+            {
+                if ((from category in db.Categories where category.Id == categoryId select category).Any()) {
+                    var category = (from c in db.Categories
+                                    where c.Id == categoryId
+                                    select c).First();
+                    db.Categories.Remove(category);
+                    db.SaveChanges();
+                    return true;
+                }
+                return false;
+            }
+        }
 
 
     }
