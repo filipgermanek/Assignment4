@@ -1,12 +1,11 @@
 ﻿<Properties StartupConfiguration="{181A174B-840A-4F6D-850A-FAA83C80AE98}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Tests/UnitTest1.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Tests/DataServiceTests.cs">
     <Files>
-      <File FileName="EfEx1/Program.cs" Line="257" Column="1" />
+      <File FileName="EfEx1/Program.cs" Line="13" Column="4" />
       <File FileName="EfEx1/Category.cs" Line="1" Column="1" />
-      <File FileName="Tests/UnitTest1.cs" Line="206" Column="10" />
+      <File FileName="Tests/DataServiceTests.cs" Line="46" Column="4" />
     </Files>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.ItemProperties.Tests FirstBuild="True" />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
