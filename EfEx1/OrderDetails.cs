@@ -15,5 +15,6 @@ namespace EfEx1
         public int ProductId { get; set; }
         public int OrderId { get; set; }
         public Products Product { get; set; }
+        public Orders Order { get; set; }
     }
 }

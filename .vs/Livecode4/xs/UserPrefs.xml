@@ -1,10 +1,30 @@
 ﻿<Properties StartupConfiguration="{181A174B-840A-4F6D-850A-FAA83C80AE98}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="trunk Status">
+  <MonoDevelop.Ide.Workbench ActiveDocument="../../Downloads/Assignment4/Assignment4/NorthwindContex.cs">
     <Files>
-      <File FileName="EfEx1/NorthwindContex.cs" Line="1" Column="1" />
-      <File FileName="EfEx1/Program.cs" Line="13" Column="49" />
-      <File FileName="trunk Status" />
+      <File FileName="EfEx1/Program.cs" Line="31" Column="51" />
+      <File FileName="../../Downloads/Assignment4/Assignment4/DataService.cs" Line="145" Column="54" />
+      <File FileName="Tests/DataServiceTests.cs" Line="185" Column="19" />
+      <File FileName="EfEx1/OrderDetails.cs" Line="19" Column="6" />
+      <File FileName="EfEx1/Products.cs" Line="1" Column="1" />
+      <File FileName="EfEx1/NorthwindContex.cs" Line="93" Column="13" />
+      <File FileName="../../Downloads/Assignment4/Assignment4/NorthwindContex.cs" Line="1" Column="1" />
     </Files>
+    <Pads>
+      <Pad Id="MonoDevelop.UnitTesting.TestPad">
+        <State name="__root__">
+          <Node name="Assignment4" expanded="True" />
+          <Node name="Livecode4" expanded="True">
+            <Node name="Tests" expanded="True">
+              <Node name="Tests" expanded="True">
+                <Node name="DataServiceTests" expanded="True">
+                  <Node name="GetOrderDetailByOrderId_ValidId_ReturnsProductNameUnitPriceAndQuantity" selected="True" />
+                </Node>
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

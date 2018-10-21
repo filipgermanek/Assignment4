@@ -1,0 +1,17 @@
+/Users/filipgermanek/Desktop/Assignment4/Tests/obj/Debug/netcoreapp2.1/Tests.csprojAssemblyReference.cache
+/Users/filipgermanek/Desktop/Assignment4/Tests/obj/Debug/netcoreapp2.1/Tests.csproj.CoreCompileInputs.cache
+/Users/filipgermanek/Desktop/Assignment4/Tests/obj/Debug/netcoreapp2.1/Tests.AssemblyInfoInputs.cache
+/Users/filipgermanek/Desktop/Assignment4/Tests/obj/Debug/netcoreapp2.1/Tests.AssemblyInfo.cs
+/Users/filipgermanek/Desktop/Assignment4/Tests/bin/Debug/netcoreapp2.1/xunit.runner.visualstudio.dotnetcore.testadapter.dll
+/Users/filipgermanek/Desktop/Assignment4/Tests/bin/Debug/netcoreapp2.1/xunit.runner.reporters.netcoreapp10.dll
+/Users/filipgermanek/Desktop/Assignment4/Tests/bin/Debug/netcoreapp2.1/xunit.runner.utility.netcoreapp10.dll
+/Users/filipgermanek/Desktop/Assignment4/Tests/bin/Debug/netcoreapp2.1/Tests.deps.json
+/Users/filipgermanek/Desktop/Assignment4/Tests/bin/Debug/netcoreapp2.1/Tests.runtimeconfig.json
+/Users/filipgermanek/Desktop/Assignment4/Tests/bin/Debug/netcoreapp2.1/Tests.runtimeconfig.dev.json
+/Users/filipgermanek/Desktop/Assignment4/Tests/bin/Debug/netcoreapp2.1/Tests.dll
+/Users/filipgermanek/Desktop/Assignment4/Tests/bin/Debug/netcoreapp2.1/Tests.pdb
+/Users/filipgermanek/Desktop/Assignment4/Tests/bin/Debug/netcoreapp2.1/EfEx1.dll
+/Users/filipgermanek/Desktop/Assignment4/Tests/bin/Debug/netcoreapp2.1/EfEx1.pdb
+/Users/filipgermanek/Desktop/Assignment4/Tests/obj/Debug/netcoreapp2.1/Tests.csproj.CopyComplete
+/Users/filipgermanek/Desktop/Assignment4/Tests/obj/Debug/netcoreapp2.1/Tests.dll
+/Users/filipgermanek/Desktop/Assignment4/Tests/obj/Debug/netcoreapp2.1/Tests.pdb
