@@ -90,6 +90,7 @@ namespace EfEx1
             builder.Property(x => x.UnitPrice).HasColumnName("unitprice");
             builder.Property(x => x.OrderQuantity).HasColumnName("quantity");
             builder.Property(x => x.OrderDiscount).HasColumnName("discount");
+
         }
     }
 
