@@ -154,7 +154,7 @@ namespace Tests
             {
                 var service = new Program();
                 var order = service.GetOrder(10248);
-            Assert.Equal(3, order.OrderDetailsList.Count);
+                Assert.Equal(3, order.OrderDetailsList.Count);
                 Assert.Equal("Queso Cabrales", order.OrderDetailsList.First().Product.Name);
                 Assert.Equal("Dairy Products", order.OrderDetailsList.First().Product.Category.CategoryName);
             }
@@ -199,9 +199,9 @@ namespace Tests
                 var service = new Program();
                 var orderDetails = service.GetOrderDetailsByProductId(11);
                 Assert.Equal(38, orderDetails.Count);
-                //Assert.Equal("1996-07-04", orderDetails.First().Order.Date.ToString("yyyy-MM-dd"));
+                Assert.Equal("1996-07-04", orderDetails.First().Order.OrderDate.ToString("yyyy-MM-dd"));
                 Assert.Equal(14, orderDetails.First().UnitPrice);
-            Assert.Equal(12, orderDetails.First().OrderQuantity);
+                Assert.Equal(12, orderDetails.First().OrderQuantity);
             }
         }
 }

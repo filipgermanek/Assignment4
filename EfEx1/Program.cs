@@ -12,18 +12,16 @@ namespace EfEx1
         {
 
         }
+
         // 1.Get a single order by ID
         public Orders GetOrder(int id)
         {
             using (var db = new NorthwindContex())
             {
-                return (from order in db.Orders
-                             join orderDetails in db.OrderDetails on order.Id equals orderDetails.OrderId
-                             join product in db.Products on orderDetails.ProductId equals product.Id
-                             join category in db.Categories on product.CategoryId equals category.Id
-                             where order.Id == id
-                             select order
-                            ).First();
+                return db.Orders.Include(x => x.OrderDetailsList).
+                    ThenInclude(x => x.Product).
+                    ThenInclude(x => x.Category)
+                    .FirstOrDefault(x => x.Id == id);
             }
         }
 
@@ -61,10 +59,11 @@ namespace EfEx1
         {
             using (var db = new NorthwindContex())
             {
-                return (from orderDetails in db.OrderDetails
-                             join product in db.Products on orderDetails.ProductId equals product.Id
-                             where orderDetails.OrderId == orderId
-                             select orderDetails).ToList();
+                var orderDetails = db.OrderDetails
+                     .Include(x => x.Order)
+                     .Where(x => x.Order.Id == orderId)
+                     .ToList();
+                return orderDetails;
             }
         }
 
@@ -73,11 +72,11 @@ namespace EfEx1
         {
             using (var db = new NorthwindContex())
             {
-                return (from orderDetails in db.OrderDetails
-                        join order in db.Orders on orderDetails.OrderId equals order.Id
-                        where orderDetails.ProductId == productId
-                        select orderDetails
-                       ).ToList();
+                var orderDetails = db.OrderDetails
+                    .Include(x => x.Order)
+                    .Where(x => x.Product.Id == productId)
+                    .ToList();
+                return orderDetails;
             }
         }
 
@@ -86,10 +85,11 @@ namespace EfEx1
         {
             using (var db = new NorthwindContex())
             {
-                return (from product in db.Products
-                             join category in db.Categories on product.CategoryId equals category.Id
-                             where product.Id == productId
-                             select product).First();
+                var product = db.Products
+                    .Include(x => x.Category)
+                    .FirstOrDefault(x => x.Id == productId);
+
+                return product;
             }
         }
 
@@ -111,10 +111,12 @@ namespace EfEx1
         {
             using (var db = new NorthwindContex())
             {
-                return (from product in db.Products
-                             join category in db.Categories on product.CategoryId equals category.Id
-                             where category.Id == categoryId
-                        select product).ToList(); 
+                var products = db.Products
+                    .Include(x => x.Category)
+                    .Where(x => x.Category.Id == categoryId)
+                    .ToList();
+
+                return products;
             }
         }
 
